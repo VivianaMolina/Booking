@@ -87,5 +87,5 @@ BOOKING/
     DB_NAME=esquema_booking
 
 5. Build and Run
-    ``bash
+    ```bash
     docker-compose up --build
