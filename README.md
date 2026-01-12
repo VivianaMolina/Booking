@@ -13,35 +13,37 @@ Este proyecto es una aplicación web para gestionar reservas de usuarios, desarr
 
 ## 📁 Estructura del proyecto
 BOOKING/
-│
-├── flask_app/
-│   ├── config/            # Configuración de la aplicación
-│   ├── controllers/       # Controladores (rutas / lógica de negocio)
-│   │   ├── reservas_controller.py
-│   │   └── usuarios_controller.py
-│   │
-│   ├── models/                # Modelos de datos
-│   │   ├── reserva.py
-│   │   └── usuario.py
-│   │
-│   ├── static/
-│   │   └── css/
-│   │       └── style.css      # Estilos CSS
-│   │
-│   ├── templates/             # Templates HTML (Jinja2)
-│   │
-│   └── __init__.py            # Inicialización del módulo Flask
-│
-├── mysql-init/
-│   └── init.sql              # Script de inicialización de la bd
-│
-├── .env                      # Variables de entorno
-├── .gitignore
-├── docker-compose.yml     # Orquestación de servicios (Flask + MySQL)
-├── Dockerfile                 # Imagen del backend Flask
-├── requirements.txt           # Dependencias de Python y Mysql
-├── server.py                  # Punto de entrada de la aplicación
-└── README.md                  # Documentación del proyecto
+    ```bash
+
+    │
+    ├── flask_app/
+    │   ├── config/            # Configuración de la aplicación
+    │   ├── controllers/       # Controladores (rutas / lógica de negocio)
+    │   │   ├── reservas_controller.py
+    │   │   └── usuarios_controller.py
+    │   │
+    │   ├── models/                # Modelos de datos
+    │   │   ├── reserva.py
+    │   │   └── usuario.py
+    │   │
+    │   ├── static/
+    │   │   └── css/
+    │   │       └── style.css      # Estilos CSS
+    │   │
+    │   ├── templates/             # Templates HTML (Jinja2)
+    │   │
+    │   └── __init__.py            # Inicialización del módulo Flask
+    │
+    ├── mysql-init/
+    │   └── init.sql              # Script de inicialización de la bd
+    │
+    ├── .env                      # Variables de entorno
+    ├── .gitignore
+    ├── docker-compose.yml     # Orquestación de servicios (Flask + MySQL)
+    ├── Dockerfile                 # Imagen del backend Flask
+    ├── requirements.txt           # Dependencias de Python y Mysql
+    ├── server.py                  # Punto de entrada de la aplicación
+    └── README.md                  # Documentación del proyecto
 
 
 ## 🧠 Funcionalidades principales
@@ -61,7 +63,7 @@ BOOKING/
     cd booking
 
 
-2. Instala las dependencias:
+2. Instala las dependencias que estan el requirements.txt,por ejemplo:
     ```bash
     pip install flask pymysql
 
@@ -75,11 +77,15 @@ BOOKING/
     python flask_app/server.py
 
 
-4. Variables de entorno (opcional)
+4. Variables de entorno:
 
-Puedes usar un archivo .env para manejar claves secretas y credenciales:
+- Puedes usar un archivo .env para manejar claves secretas y credenciales:
+    ```bash
+    DB_HOST=localhost
+    DB_USER=root
+    DB_PASSWORD=Escribe aca tu Password
+    DB_NAME=esquema_booking
 
-DB_HOST=localhost
-DB_USER=root
-DB_PASSWORD=Tu Password
-DB_NAME=esquema_booking
+5. Build and Run
+    ``bash
+    docker-compose up --build
