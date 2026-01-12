@@ -1,0 +1,6 @@
+flask
+pymysql
+flask-bcrypt
+cryptography
+python-dotenv
+mysql-connector-python

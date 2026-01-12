@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+}
+
+.boton-color {
+    background-color: #FF9900;      /* Naranjo */
+    border: 1px solid #CC7A00;      /* Borde más oscuro */
+    padding: 12px 20px;             /* Espaciado */
+    border-radius: 6px;             /* Esquinas suaves */
+    color: #111;                    /* Texto oscuro */
+    font-weight: 600;               /* Semibold */
+    font-family: "Amazon Ember", Arial, sans-serif;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+}
+
+.red-box {
+    background-color: #E53935;      /* Rojo principal */
+    border: 1px solid #B71C1C;      /* Borde más oscuro */
+    padding: 12px 20px;            
+    border-radius: 6px;             /* Esquinas suaves */
+    color: #fff;                    /* Texto blanco */
+    font-weight: 600;               /* Semibold */
+    font-family: "Amazon Ember", Arial, sans-serif;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+}
+
+.green-box {
+    background-color: #2E7D32;      /* Verde principal (success) */
+    border: 1px solid #1B5E20;      /* Borde más oscuro */
+    padding: 12px 20px;             
+    border-radius: 6px;             /* Esquinas suaves */
+    color: #fff;                    /* Texto blanco */
+    font-weight: 600;               /* Semibold */
+    font-family: "Amazon Ember", Arial, sans-serif;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+}
